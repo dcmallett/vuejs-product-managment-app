@@ -1,3 +1,4 @@
+import { h } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -20,6 +21,14 @@ const router = createRouter({
       path: '/projects/:id',
       name: 'single-project',
       component: () => import('@/views/SingleProjectView.vue')
+    },
+    {
+      //simple wildcard to mathc any route nested under the main domain
+      //you can also set a specific route 404 for different pages
+      //this wildcard can be anything and in any legnth. this will tell vue router to match any undefiend route
+      path: '/:catchAll(.*)*',
+      name: 'NotFound',
+      component: h('p', { style: 'color: red;' }, '404 Not Found')
     }
   ]
 })
