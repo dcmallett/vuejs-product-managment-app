@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     //setting it to 1 make it warn us instead of showing an error
-    'no-unused-vars': 1
+    'no-unused-vars': 1,
+    'vue/multi-word-component-names': 0
   }
 }
