@@ -4,5 +4,5 @@
     <RouterLink :to="{ name: '/projects/' }"> Go to Projects </RouterLink>
   </div>
 </template>
+
 <script setup lang="ts"></script>
-<style lang=""></style>
