@@ -1,11 +1,10 @@
 <template>
+  <Header title="Pulse" />
   <main>
     <RouterView />
   </main>
 </template>
 
 <script setup lang="ts">
-import { supabase } from '@/lib/supabaseClient'
-
-console.log(supabase)
+import Header from './components/header.vue'
 </script>
